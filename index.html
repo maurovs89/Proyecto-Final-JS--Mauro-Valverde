@@ -11,89 +11,57 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-
-        <!--Barra superior con logo, buscador, login y carrito-->
-
-    <header>
-            <!--<nav>
-                <a href="index.html"><img src=Imagenes\LOGONUEVOCHICO.png alt="Logo SOS HOGAR Ferreteria Online"></a>
-                <ul>
-                    <li>Buscador: ¿Qué solución estas buscando hoy?</li>
-                    <li><a href="">Iniciar sesión</a></li>
-                </ul>
-            </nav>-->
-            
-            <!-- Topbar de Bootstrap-->
-
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src=Imagenes\LOGONUEVOCHICO.png alt="Logo SOS HOGAR Ferreteria Online"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse show" id="navbarWithDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categorias
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Jardín</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Garage</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Baño</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cocina</a>
-                  </li>
-                  <li>
-                    <a href=""><img src="Imagenes\iconos\perfil-mini.png" alt="Inicio de sesión" class="img-fluid"></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="Imagenes\iconos\carrito-de-compras-mini.png" alt="Carrito de compras"></a>
-                  </li>
-                  
-                  <!--<li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>-->
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-        <!--Barra con opciones de busqueda por Catergorias, Jardín, Garage, Baño y Cocina-->
-
-        <!--<section>
-            <nav>
-                <a href="">Categorias</a>
-                <a href="">Jardín</a>
-                <a href="">Garage</a>
-                <a href="">Baño</a>
-                <a href="">Cocina</a>
-            </nav>
-        </section>-->
-    </header>
+  <!--Barra superior con logo, buscador, login y carrito-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="index.html"><img class="w-50" src="Imagenes\LOGONUEVOCHICO.png" alt="Logo Tienda Online Sos Hogar Ferrteria"></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <a href="#"><img class="img-thumbnail" src="Imagenes\iconos\perfil-mini.png" alt="Logo inicio de sesión"></a>
+          <a href="#"><img class="img-thumbnail" src="Imagenes\iconos\carrito-de-compras-mini.png" alt="Logo carrito de compras"></a>
+        </div>
+      </div>
+    </nav>
+    <!--Barra con opciones de busqueda por Catergorias: Jardín, Garage, Baño y Cocina-->
+    <section>
+      <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="categoria-electricidad.html">Electricidad</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-construccion.html">Construcción</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-pintura.html">Pintura</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-plomeria.html">Plomería</a>
+      </nav>
+    </section>
+  </header>
+    <!--Corrousel con portadas de la marca-->
     <section>
         <div id="carouselWithInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="Imagenes\promo22.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 1">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="Imagenes\portada-herramientas.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 1">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="Imagenes\promo21.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 2">
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="Imagenes\portada-pinturas.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 2">
               </div>
-              <div class="carousel-item">
-                <img src="Imagenes\promo27.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 3"></div>
-            </section>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="Imagenes\portada-sanitarios.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 2">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselWithInterval" role="button" data-bs-slide="prev">
@@ -117,17 +85,11 @@
             </ul>
         </nav>
     </section-->
-    <section>
-        <div class="row">
-            <div class="col-3"><a href="categoria-electricidad.html"><img class="w-50" src=Imagenes\iconos\enchufe.png alt="Logo de enchufe para categoria electricidad"></a></div>
-            <div class="col-3"><a href="categoria-construccion.html"><img class="w-50" src=Imagenes\iconos\espatula.png alt="Logo de espatula para categoria construcción"></a></div>
-            <div class="col-3"><a href="categoria-pintura.html"><img class="w-50" src=Imagenes\iconos\pintor.png alt="Logo de rodillo para categoria pinturas"></a></div>
-            <div class="col-3"><a href="categoria-jardin.html"><img class="w-50" src=Imagenes\iconos\planta.png alt="Logo de planta en maceta para categoria jardineria"></div>
-          </div>
-    </section>
 
-        <!--Sección para Ofertas Imperdibles con listado de productos en descuento-->
+    <!-- Sección para listar las categorias con imagenes y link a la pag correspondiente-->
 
+
+  <!--Sección para Ofertas Imperdibles con listado de productos en descuento-->
     <section>
         <h2 class="titulos">¡OFERTAS IMPERDIBLES!</h2>
         <nav>
