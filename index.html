@@ -9,6 +9,7 @@
     <title>Home - SOS HOGAR - Ferreteria Online</title>
     <!-- CDN Bootstrps-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--Fuente Roboto-->
 </head>
 <body>
   <!--Barra superior con logo, buscador, login y carrito-->
@@ -22,18 +23,18 @@
           <a class="navbar-brand" href="index.html"><img class="w-50" src="Imagenes\LOGONUEVOCHICO.png" alt="Logo Tienda Online Sos Hogar Ferrteria"></a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#"> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link active" aria-current="page" href="#"> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="#"> </a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="¿Qué solución necesitas?" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
           <a href="#"><img class="img-thumbnail" src="Imagenes\iconos\perfil-mini.png" alt="Logo inicio de sesión"></a>
           <a href="#"><img class="img-thumbnail" src="Imagenes\iconos\carrito-de-compras-mini.png" alt="Logo carrito de compras"></a>
@@ -43,16 +44,19 @@
     <!--Barra con opciones de busqueda por Catergorias: Jardín, Garage, Baño y Cocina-->
     <section>
       <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="categoria-electricidad.html">Electricidad</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-construccion.html">Construcción</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-pintura.html">Pintura</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-plomeria.html">Plomería</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html"><h6>Home</h6></a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-construccion.html"><h6>Quienes somos</h6></a>
+        <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="categoria-electricidad.html"><h6>Electricidad</h6></a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-construccion.html"><h6>Construcción</h6></a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-pintura.html"><h6>Pintura</h6></a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-plomeria.html"><h6>Plomería</h6></a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="categoria-construccion.html"><h6>Contacto</h6></a>
       </nav>
     </section>
   </header>
     <!--Corrousel con portadas de la marca-->
     <section>
-        <div id="carouselWithInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselWithInterval" class="carousel slide p-2" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
                 <img src="Imagenes\portada-herramientas.jpg" class="d-block w-100" alt="Promoción SOS HOGAR 1">
@@ -74,65 +78,146 @@
             </a>
           </div>
     </section>
-    <!--section>
-        <nav>
-            <ul>
-                <li><a href="categoria-electricidad.html"><img src=Imagenes\iconos\enchufe.png alt="Logo de enchufe para categoria electricidad"></a></li>
-                <li><a href="categoria-construccion.html"><img src=Imagenes\iconos\espatula.png alt="Logo de espatula para categoria construcción"></a></li>
-                <li><a href="categoria-pintura.html"><img src=Imagenes\iconos\pintor.png alt="Logo de rodillo para categoria pinturas"></a></li>
-                <li><a href="categoria-jardin.html"><img src=Imagenes\iconos\planta.png alt="Logo de planta en maceta para categoria jardineria"></a></li>
-                <li><a href="categoria-plomeria.html"><img src=Imagenes\iconos\plumbering.png alt="Logo de canilla para categoria plomeria"></a></li>
-            </ul>
-        </nav>
-    </section-->
 
     <!-- Sección para listar las categorias con imagenes y link a la pag correspondiente-->
 
+    <section>
+      <div class="container text-center p-2">
+        <div class="row align-items-start">
+          <div class="col">
+            <a href="categoria-electricidad.html"><img class="p-2 w-75" src=Imagenes\iconos\enchufe.png alt="Logo de enchufe para categoria electricidad"></a>
+          </div>
+          <div class="col">
+            <a href="categoria-construccion.html"><img class="p-2  w-75" src=Imagenes\iconos\espatula.png alt="Logo de espatula para categoria construcción"></a>
+          </div>
+          <div class="col">
+            <a href="categoria-pintura.html"><img class="p-2 w-75" src=Imagenes\iconos\pintor.png alt="Logo de rodillo para categoria pinturas"></a>
+          </div>
+          <div class="col">
+            <a href="categoria-jardin.html"><img class="p-2 w-75" src=Imagenes\iconos\planta.png alt="Logo de planta en maceta para categoria jardineria"></a>
+          </div>
+          <div class="col">
+            <a href="categoria-plomeria.html"><img class="p-2 w-75" src=Imagenes\iconos\plumbering.png alt="Logo de canilla para categoria plomeria"></a>
+          </div>
+          <div class="col">
+            <a href="categoria-herramientas.html"><img class="p-2 w-75" src=Imagenes\iconos\llave-inglesa.png alt="Logo de herramientas"></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!--Sección para Ofertas Imperdibles con listado de productos en descuento-->
     <section>
-        <h2 class="titulos">¡OFERTAS IMPERDIBLES!</h2>
-        <nav>
-            <ul>
-                <li><img src=Imagenes\Productos\producto1.jpg alt="Imagen de producto amoladora de mano"></li>
-                <li><img src=Imagenes\Productos\producto2.jpg alt="Imagen de producto juego de destornilladores"></li>
-                <li><img src=Imagenes\Productos\producto3.jpg alt="Imagen de producto juego de pinzas"></li>
-                <li><img src=Imagenes\Productos\producto4.jpg alt="Imagen de prodcuto martillo"></li>
-            </ul>
-        </nav>
+      <div class="container text-center p-5">
+        <div class="row">
+          <div class="col">
+            <h2>¡OFERTAS IMPERDIBLES!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-4 g-3 p-2">
+        <div class="col">
+          <div class="card">
+            <img src=Imagenes\Productos\producto1.jpg alt="Imagen de producto amoladora de mano">
+            <div class="card-body">
+              <h5 class="card-title">Amoladora de mano</h5>
+              <p class="card-text">$ 100,00</p>
+              <a href="#" class="btn btn-primary">!Comprar ya!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src=Imagenes\Productos\producto2.jpg alt="Imagen de producto juego de destornilladores">
+            <div class="card-body">
+              <h5 class="card-title">Juego de destornilladores</h5>
+              <p class="card-text">$ 100,00</p>
+              <a href="#" class="btn btn-primary">!Comprar ya!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src=Imagenes\Productos\producto3.jpg alt="Imagen de producto juego de pinzas">
+            <div class="card-body">
+              <h5 class="card-title">Juego de pinzas</h5>
+              <p class="card-text">$ 100,00</p>
+              <a href="#" class="btn btn-primary">!Comprar ya!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src=Imagenes\Productos\producto4.jpg alt="Imagen de prodcuto martillo">
+            <div class="card-body">
+              <h5 class="card-title">Martillo</h5>
+              <p class="card-text">$ 100,00</p>
+              <a href="#" class="btn btn-primary">!Comprar ya!</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
         <!--Sección para mostrar las marcas de productos-->
-
     <section>
-        <h3 class="titulos">NUESTRAS MARCAS</h3>
-        <nav>
-            <ul>
-                <li><img src=Imagenes\Marcas\dewalt.png alt="Logo de marca Dewalt"></li>
-                <li><img src=Imagenes\Marcas\makita.png alt="Logo de marca Makita"></li>
-                <li><img src=Imagenes\Marcas\stanley.png alt="Logo de marca Stanley"></li>
-                <li><img src=Imagenes\Marcas\sthil.jpg alt="Logo de marca Sthil"></li>
-            </ul>
-        </nav>
+      <div class="container text-center p-5">
+        <div class="row">
+          <div class="col">
+            <h2>NUESTRAS MARCAS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center p-2">
+        <div class="row">
+          <div class="col">
+            <a href="#"><img class="w-75 marcas" src=Imagenes\Marcas\dewalt.png alt="Logo de marca Dewalt"></a>
+          </div>
+          <div class="col">
+            <a href="#"><img class="w-75 marcas" src=Imagenes\Marcas\makita.png alt="Logo de marca Makita"></a>
+          </div>
+          <div class="col">
+            <a href="#"><img class="w-75 marcas" src=Imagenes\Marcas\stanley.png alt="Logo de marca Stanley"></a>
+          </div>
+          <div class="col">
+            <a href="#"><img class="w-75 marcas" src=Imagenes\Marcas\sthil.jpg alt="Logo de marca Sthil"></a>
+          </div>
+        </div>
+      </div>
     </section>
-    
+     
     <!--Pie de pagina con logo, contacto, redes sociales y links de utilidad-->
 
-    <footer>
-        <nav>
+    <footer class="p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col position-relative">
+            <img class="w-50 position-absolute top-50 start-50 translate-middle" src="Imagenes\LOGONUEVOCHICO.png" alt="Logo Tienda Online Sos Hogar Ferrteria">
+          </div>
+          <div class="col">
             <ul>
-                <li>Contacto +54 234234234234</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Gmail</li>
-                <li>Categorias</li>
-                <li>Jardín</li>
-                <li>Garage</li>
-                <li>Baño</li>
-                <li>Cocina</li>
-                <li>Suscribe tu mail para novedades</li>
+              <li><a><h5>Sigamos conectados</h5></a></li>
+              <li><a href="#"><img class="p-1" src="Imagenes\iconos\telefono-mini.png" alt="Telefono"></a></li>
+              <li><a href="#"><img class="p-1" src="Imagenes\iconos\mensajeromini.png" alt="Messenger"></a></li>
+              <li><a href="#"><img class="p-1" src="Imagenes\iconos\gmailmini-32.png" alt="Gmail"></a></li>
+              <li><a href="#"><img class="p-1" src="Imagenes\iconos\facebookmini-32.png" alt="Facebook"></a></li>
             </ul>
-        </nav>
+          </div>
+          <div class="col">
+            <ul>
+              <li><h5>Nuestras secciones</h5></li>
+              <li><a href="categoria-jardin.html"><h6>Jardín</h6></a></li>
+              <li><a href="seccion-bano.html"><h6>Baño</h6></a></li>
+              <li><a href="seccion-cocina.html"><h6>Cocina</h6></a></li>
+              <li><a href="seccion-garage.html"><h6>Garage</h6></a></li>
+              <li><div class="input-group">
+                <input type="text" class="form-control" placeholder="usuario@tumail.com" aria-label="Username" aria-describedby="input-group-right">
+                <span class="input-group-text" id="input-group-right-example">Suscribirme</span>
+              </div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
