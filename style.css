@@ -2,8 +2,48 @@ ul {
     list-style: none;
 }
 
-h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight:bolder;
-
+h2 {
+    font-family: 'Roboto', sans-serif
 }
+
+footer {
+    background-image: linear-gradient(to right, gray , white);
+   }
+
+.imgRedonda {
+    width:30px;
+    height:30px;
+    border-radius:15px;
+}
+
+.ofertas {
+    background-image: linear-gradient(to left, gray , white);
+   }
+
+.menu {
+    background-color: black;
+}
+
+h6 {
+    color: yellow;
+}
+
+h6:hover {
+    color: white;
+    background-color: gray;
+}
+
+footer h6 {
+    color: black;
+}
+
+.logo-animacion:hover {
+    transform: rotatey(360deg);
+    transition: all 3s;
+ }
+
+ .logo-animacion-footer:hover {
+    transform: scale(2,2);
+    transition: all 2s;
+    animation-timing-function:ease-in-out;  
+ }
