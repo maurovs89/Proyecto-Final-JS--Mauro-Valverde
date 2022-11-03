@@ -3,7 +3,8 @@ ul {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+
 }
 
 footer {
@@ -21,11 +22,11 @@ footer {
    }
 
 .menu {
-    background-color: black;
+    background-color: white;
 }
 
 h6 {
-    color: yellow;
+    color: black;
 }
 
 h6:hover {
@@ -46,4 +47,15 @@ footer h6 {
     transform: scale(2,2);
     transition: all 2s;
     animation-timing-function:ease-in-out;  
+ }
+
+ @media (max-width: 992px) {
+    .logo-animacion {
+        display: none;
+    }
+}
+    
+
+ .marcas {
+    justify-content: center;
  }
