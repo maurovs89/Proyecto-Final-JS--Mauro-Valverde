@@ -43,19 +43,40 @@ footer h6 {
     transition: all 3s;
  }
 
- .logo-animacion-footer:hover {
+.logo-animacion-footer:hover {
     transform: scale(2,2);
     transition: all 2s;
     animation-timing-function:ease-in-out;  
  }
 
- @media (max-width: 992px) {
+@media (max-width: 992px) {
     .logo-animacion {
         display: none;
     }
 }
-    
-
- .marcas {
+  
+.marcas {
     justify-content: center;
  }
+
+.categorias {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .categorias {
+    max-width: 50%;
+    max-height: 50%;
+    }
+}
+
+.img-footer {
+    scale: (1,1);
+}
+
+@media (max-width: 992px) {
+    .img-footer {
+    scale (.25,.25);
+    }
+}
