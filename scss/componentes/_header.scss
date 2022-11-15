@@ -1,0 +1,28 @@
+header{
+    
+    nav{
+        
+        div{
+            
+            div{
+                
+                ul{
+                    
+                    li{
+                        text-decoration-color: red;
+                        &:hover{
+                            background-color: yellow;
+                        }
+                        h6 {
+                            &:hover{
+                                text-align: center;
+                            }
+                        }                        
+                    }
+
+                }
+
+            }
+        }
+    }
+}

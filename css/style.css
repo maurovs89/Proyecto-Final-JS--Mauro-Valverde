@@ -1,0 +1,16 @@
+header nav div div ul li {
+  text-decoration-color: red;
+}
+header nav div div ul li:hover {
+  background-color: yellow;
+}
+header nav div div ul li h6:hover {
+  text-align: center;
+}
+
+h6 {
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

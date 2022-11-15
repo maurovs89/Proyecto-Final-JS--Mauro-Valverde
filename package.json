@@ -1,0 +1,23 @@
+{
+  "name": "desarrollo-web-proyecto-final",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Mauro Valverde</h1>\r <h3 align=\"center\">A passionate frontend developer from Mendoza, Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurovs89/Proyecto-Final-MV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maurovs89/Proyecto-Final-MV/issues"
+  },
+  "homepage": "https://github.com/maurovs89/Proyecto-Final-MV#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
