@@ -1,2 +1,21 @@
 @import "componentes/header";
-@import "componentes/fuentes"
+@import "componentes/fuentes";
+@import "componentes/footer";
+
+@media (max-width: 1200px) {
+    .categorias {
+    max-width: 50%;
+    max-height: 50%;
+    }
+}
+
+.img-footer {
+    scale: (1,1);
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .img-footer {
+        scale: (.25,.25);
+    }
+}

@@ -5,17 +5,34 @@ header{
         div{
             
             div{
-                
+                img{
+                    @media only screen and (max-width: 992px){display: none};
+                    &:hover {
+                        transform: rotatey(360deg);
+                        transition: all 3s;
+                    }
+                }
+                form {
+                    input{
+                        size: "200";
+
+                    }
+                    button {
+
+                    }
+                }
                 ul{
                     
                     li{
-                        text-decoration-color: red;
+                        
                         &:hover{
                             background-color: yellow;
                         }
                         h6 {
+                            
                             &:hover{
-                                text-align: center;
+                                color: black;
+                                font-style: italic;
                             }
                         }                        
                     }

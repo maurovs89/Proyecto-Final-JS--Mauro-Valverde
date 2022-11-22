@@ -1,16 +1,60 @@
-header nav div div ul li {
-  text-decoration-color: red;
+@media only screen and (max-width: 992px) {
+  header nav div div img {
+    display: none;
+  }
+}
+header nav div div img:hover {
+  transform: rotatey(360deg);
+  transition: all 3s;
+}
+header nav div div form input {
+  size: "200";
 }
 header nav div div ul li:hover {
   background-color: yellow;
 }
 header nav div div ul li h6:hover {
-  text-align: center;
+  color: black;
+  font-style: italic;
 }
 
 h6 {
   font-family: "Roboto";
-  font-style: italic;
+  color: gray;
+}
+
+footer {
+  background-image: linear-gradient(to right, gray, white);
+}
+footer div div div ul {
+  list-style: none;
+}
+footer div div div ul li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+footer div div div ul li img:hover {
+  transform: scale(2, 2);
+  transition: all 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .categorias {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+.img-footer {
+  scale: 1, 1;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .img-footer {
+    scale: 0.25, 0.25;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
