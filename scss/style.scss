@@ -1,6 +1,7 @@
 @import "componentes/header";
 @import "componentes/fuentes";
 @import "componentes/footer";
+@import "componentes/botones";
 
 @media (max-width: 1200px) {
     .categorias {
@@ -18,4 +19,9 @@
     .img-footer {
         scale: (.25,.25);
     }
+}
+
+.imgback {
+    background-image: url("../Imagenes/promo21.jpg");
+    background-size: cover;
 }

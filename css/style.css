@@ -19,8 +19,17 @@ header nav div div ul li h6:hover {
 }
 
 h6 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: gray;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
 }
 
 footer {
@@ -40,6 +49,11 @@ footer div div div ul li img:hover {
   animation-timing-function: ease-in-out;
 }
 
+.button {
+  background-color: yellow;
+  font-size: large;
+}
+
 @media (max-width: 1200px) {
   .categorias {
     max-width: 50%;
@@ -55,6 +69,10 @@ footer div div div ul li img:hover {
   .img-footer {
     scale: 0.25, 0.25;
   }
+}
+.imgback {
+  background-image: url("../Imagenes/promo21.jpg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
