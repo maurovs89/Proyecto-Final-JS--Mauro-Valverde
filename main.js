@@ -59,7 +59,7 @@ function aplicarDescuento(porcentaje) {
     alert(`¡Descuento aplicado del ${porcentaje}%!.\nTotal antes: $${total.toFixed(2)} \nNuevo total: $${totalcondescuento.toFixed(2)}`);
 }
 
-// Main
+// Bucle while que inicia la funcionalidad
 while (true) {
     let nombre = prompt("Ingrese el nombre del producto:");
     let precio = parseFloat(prompt(`Ingrese el precio de ${nombre}:`));
