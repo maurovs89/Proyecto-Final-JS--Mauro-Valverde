@@ -87,6 +87,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     let cart = [];
+    const productsContainer = document.getElementById('products-container'); // Contenedor de productos
 
     // Función para agregar un producto al carrito
     function addToCart(product) {
@@ -99,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         updateCartCount();
         saveCart();
-        showModalConfirmation(product);
+        showToastNotification(product); // Mostrar notificación Toastify
     }
 
     // Función para actualizar la cantidad de productos en el carrito
@@ -148,16 +149,63 @@ document.addEventListener("DOMContentLoaded", function () {
         renderCartItems();
     }
 
-    // Mostrar modal de confirmación de adición al carrito
-    function showModalConfirmation(product) {
-        let modalBody = document.querySelector('#confirmationModal .modal-body');
-        modalBody.textContent = `El producto ${product.name} ha sido agregado al carrito.`;
-        let confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
-        confirmationModal.show();
+    // Mostrar notificación de Toastify
+    function showToastNotification(product) {
+        Toastify({
+            text: `El producto ${product.name} ha sido agregado al carrito.`,
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            backgroundColor: "#4CAF50",
+            stopOnFocus: true
+        }).showToast();
+    }
+
+    // Función para obtener productos de la API
+    async function fetchProducts() {
+        try {
+            let response = await fetch('https://fakestoreapi.com/products/category/electronics');
+            let products = await response.json();
+            renderProducts(products);
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        }
+    }
+
+    // Función para renderizar los productos en la página
+    function renderProducts(products) {
+        productsContainer.innerHTML = ''; // Limpiar contenedor de productos
+        products.forEach(product => {
+            let productCard = document.createElement('div');
+            productCard.className = 'card';
+            productCard.innerHTML = `
+                <img src="${product.image}" class="card-img-top" alt="${product.title}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.title}</h5>
+                    <p class="card-text">$${product.price.toFixed(2)}</p>
+                    <button class="btn btn-primary">Comprar ya</button>
+                </div>
+            `;
+            productsContainer.appendChild(productCard);
+
+            // Añadir evento al botón "Comprar ya"
+            let buyButton = productCard.querySelector('.btn-primary');
+            buyButton.addEventListener('click', function () {
+                addToCart({
+                    id: product.id,
+                    name: product.title,
+                    price: product.price
+                });
+            });
+        });
     }
 
     // Cargar el carrito al iniciar la página
     loadCart();
+
+    // Obtener productos de la API al iniciar la página
+    fetchProducts();
 
     // Evento para abrir el modal del carrito cuando se hace clic en el número o el ícono del carrito
     document.getElementById('view-cart').addEventListener('click', function (event) {
@@ -173,21 +221,8 @@ document.addEventListener("DOMContentLoaded", function () {
         cartModal.show();
         renderCartItems();
     });
-
-    // Agregar evento para botones de "Comprar ya"
-    document.querySelectorAll('.btn-primary').forEach((button, index) => {
-        button.addEventListener('click', function () {
-            let productCard = button.closest('.card');
-            let productName = productCard.querySelector('.card-title').textContent;
-            let productPrice = parseFloat(productCard.querySelector('.card-text').textContent.replace('$', '').replace('.', '').replace(',', '.'));
-            let product = {
-                id: index,
-                name: productName,
-                price: productPrice
-            };
-            addToCart(product);
-        });
-    });
 });
+
+
 
 
